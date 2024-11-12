@@ -1,17 +1,18 @@
 package projects.f5.amstrong_java;
 
-/**
- * Hello world!
- */
 public final class App {
-    private App() {
-    }
-
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        int[] testCases = { 371, 1634, 351, 2015 };
+
+        System.out.println("Checking Armstrong numbers:");
+        System.out.println("---------------------------");
+        for (int number : testCases) {
+
+            if (AmstrongNumber.isAmstrongNumber(number)) {
+                System.out.println(number + " is an Amstrong number");
+            } else {
+                System.out.println(number + " is not an Amstrong number");
+            }
+        }
     }
 }
