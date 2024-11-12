@@ -2,7 +2,7 @@ package projects.f5.amstrong_java;
 
 public class AmstrongNumber {
 
-    public static boolean isArmstrongNumber(int number) {
+    public static boolean isAmstrongNumber(int number) {
         int totalDigits = (int) Math.floor(Math.log10(number)) + 1;
         int sum = 0;
         int newNumber = number;
